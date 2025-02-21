@@ -1,4 +1,4 @@
-package ComentarioLinea.java;
+
 
 public class ComentarioVariasLineas{
 	public static void main(String ars[]){
