@@ -14,6 +14,7 @@ public class T04 {
 		System.out.println("La resta de a +b: " + resta);
 		System.out.println("La multiplica de a +b: " + multiplica);
 		System.out.println("La division de a +b: " + divide);
+		System.out.println("el resto es: " + a%b);
 
 	}
 
