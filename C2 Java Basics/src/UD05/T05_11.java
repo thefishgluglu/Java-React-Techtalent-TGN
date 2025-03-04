@@ -3,7 +3,6 @@ package UD05;
 import javax.swing.JOptionPane;
 
 public class T05_11 {
-	// crea una aplicacion que pida un	dia de la semana y muestre si el dia es laborable o no
 
 	public static void main(String[] args) {
 		String dia = JOptionPane.showInputDialog("Ingrese el dia:").toLowerCase();

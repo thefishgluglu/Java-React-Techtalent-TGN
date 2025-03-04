@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
            	double numero = Double.parseDouble(texto_num);
             double division= (numero / 2);	
         	JOptionPane.showMessageDialog(null, "El resultado de la divison es: " + division);
-        	
+        	        	
         	if (numero % 2 == 0) {
                 JOptionPane.showMessageDialog(null, "El número " + numero + " es divisible entre 2.");
             } else {

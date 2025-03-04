@@ -1,17 +1,17 @@
 package UD05;
-import java.util.Scanner;
 
+import javax.swing.JOptionPane;
 public class T05_2 {
 	public static void main(String[] args){
 		
-	Scanner sc = new Scanner(System.in);
 	
+	String nombre = "Fernando";
 	System.out.println("--Bienvenido--");
-	System.out.println("feranando");
+	System.out.println("Daniel");
 	
-	String name = sc.nextLine();
-	sc.close();
+	nombre = JOptionPane.showInputDialog("Introduce tu nombre");
+	JOptionPane.showMessageDialog(null, "Bienvenido " + nombre);  
+	 
 	
-	}	 
-
+	}	
 }
