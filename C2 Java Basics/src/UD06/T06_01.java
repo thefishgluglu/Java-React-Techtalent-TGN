@@ -18,8 +18,8 @@ public class T06_01 {
 						}
 	}
         	 private static void cuadrado() {
-        		double radio = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el lado de la figura:"));
-        		JOptionPane.showMessageDialog(null, "el area del caudrado es:" + (radio * radio));
+        		double lado = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el lado de la figura:"));
+        		JOptionPane.showMessageDialog(null, "el area del caudrado es:" + (lado * lado));
         	}
         	 private static void circulo() {
         		double radio = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el radio de la figura:"));
@@ -36,7 +36,4 @@ public class T06_01 {
     	  	
     	  	       
     	  	 
-    	  	 
-   
-    
-
+    	 
