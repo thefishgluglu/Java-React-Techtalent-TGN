@@ -71,9 +71,10 @@ public class T06_12 {
       for (int j = 0; j < longitud2; j++) {
         if (num[i][j] % 10 == cifra) {
           System.out.println("El valor de num[" + i + "][" + j + "] es " + num[i][j]);
-        } else {
-          System.out.println("no hay ningun " + cifra);
-        }
+        } 
+//        else if (num[i][j] % 10 == 0) {
+//          System.out.println("no hay ningun " + cifra);
+//        }
       }
     }
   }
