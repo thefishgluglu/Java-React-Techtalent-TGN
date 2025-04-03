@@ -12,7 +12,7 @@ public class T07_02 {
         HashMap<String, Double> precios = new HashMap<>();
         final double IVA = 0.21;
 
-        // Fixed prices for each fruit
+        
         precios.put("manzanas", 1.0);
         precios.put("limones", 0.5);
         precios.put("peras", 1.2);
@@ -62,8 +62,7 @@ public class T07_02 {
             double cambioFinal = cambio - totalIVA;
 			while (cambioFinal < 0) {
 				JOptionPane.showMessageDialog(null, "El importe es insuficiente.");
-//				System.out.println("El importe es insuficiente.");
-//			} return cambioStr;
+
             System.out.println("Cambio: " + cambioFinal + " $");
         }
     }

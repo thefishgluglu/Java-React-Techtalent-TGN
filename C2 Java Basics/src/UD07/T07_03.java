@@ -3,7 +3,7 @@ package UD07;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
 
-public class To7_03 {
+public class T07_03 {
     public static void main(String[] args) {
         HashMap<String, Double> precios = precios();
         HashMap<String, Integer> stock = stock();
@@ -16,7 +16,7 @@ public class To7_03 {
                     JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
 
             switch (choice) {
-                case 0: // Añadir Producto
+                case 0: 
                     String nuevoProducto = JOptionPane.showInputDialog("Introduce el nombre del nuevo producto").toLowerCase();
                     String precioStr = JOptionPane.showInputDialog("Introduce el precio de " + nuevoProducto);
                     double precio = Double.parseDouble(precioStr);
@@ -28,7 +28,7 @@ public class To7_03 {
                     JOptionPane.showMessageDialog(null, "Producto añadido correctamente.");
                     break;
 
-                case 1: // Consultar Producto
+                case 1: 
                     String productoConsulta = JOptionPane.showInputDialog("Introduce el nombre del producto a consultar").toLowerCase();
                     if (precios.containsKey(productoConsulta) && stock.containsKey(productoConsulta)) {
                         double precioConsulta = precios.get(productoConsulta);
@@ -39,7 +39,7 @@ public class To7_03 {
                     }
                     break;
 
-                case 2: // Salir
+                case 2: 
                     continuar = false;
                     break;
 
