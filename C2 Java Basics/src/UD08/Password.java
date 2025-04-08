@@ -18,7 +18,7 @@ public class Password {
     }
     public String generarPassword() {
     	longitud = jOshowInputDialog("Introduce la longitud de la contraseña: ");
-    }
+    	    }
     private int jOshowInputDialog(String string) {
     	String caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
     	StringBuilder password = new StringBuilder(); 
