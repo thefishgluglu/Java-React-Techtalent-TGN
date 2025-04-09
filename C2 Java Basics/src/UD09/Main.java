@@ -10,9 +10,31 @@ public class Main {
 	private static ArrayList<String> occupiedSeats = new ArrayList<>();
 	private static ArrayList<String> selectedSeats = new ArrayList<>();
 	private static final String FILE_NAME = "occupiedSeats.txt";
+	
+	
+	
 
 	public static void main(String[] args) {
-		loadOccupiedSeats();
+		
+		JFrame frame1 = new JFrame("BIENVENIDO AL CINE " );
+		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame1.setSize(800, 600);
+		JButton button1 = new JButton("entrar");
+		button1.setPreferredSize(new Dimension(200, 100));
+		button1.setBackground(Color.RED);
+		button1.setForeground(Color.WHITE);
+		button1.setFont(new Font("Arial", Font.BOLD, 24));
+		button1.addActionListener(e -> {
+			frame1.dispose(); // Cerrar la ventana de bienvenida
+			
+		});
+		frame1.setLayout(new FlowLayout());
+		frame1.add(button1);
+		frame1.setVisible(true);
+		// Esperar a que el usuario cierre la ventana de bienvenida
+		
+		loadOccupiedSeats();		
+		
 
 		String[] movieTitles = { "Torrente", "Avatar", "Titanic", "Ready Player One", "El resplandor", "Mulan",
 				"El rey león" };
