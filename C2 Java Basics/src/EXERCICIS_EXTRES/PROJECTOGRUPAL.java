@@ -1,8 +1,8 @@
-package TA6;
+package EXERCICIS_EXTRES;
 
 import javax.swing.JOptionPane;
 
-public class T06_11 {
+public class PROJECTOGRUPAL {
 
 	public static void main(String[] args) {
 		String Filas = JOptionPane.showInputDialog("Inserte el numero de filas de la matriz: ");
