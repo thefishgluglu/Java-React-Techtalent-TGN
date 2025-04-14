@@ -15,24 +15,6 @@ public class Main {
 	
 
 	public static void main(String[] args) {
-		
-		JFrame frame1 = new JFrame("BIENVENIDO AL CINE " );
-		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame1.setSize(800, 600);
-		JButton button1 = new JButton("entrar");
-		button1.setPreferredSize(new Dimension(200, 100));
-		button1.setBackground(Color.RED);
-		button1.setForeground(Color.WHITE);
-		button1.setFont(new Font("Arial", Font.BOLD, 24));
-		button1.addActionListener(e -> {
-			frame1.dispose(); // Cerrar la ventana de bienvenida
-			
-		});
-		frame1.setLayout(new FlowLayout());
-		frame1.add(button1);
-		frame1.setVisible(true);
-		// Esperar a que el usuario cierre la ventana de bienvenida
-		
 		loadOccupiedSeats();		
 		
 
@@ -186,7 +168,7 @@ public class Main {
 				saveOccupiedSeats();
 				selectedSeats.clear();
 				frame.dispose();
-				main(null); // Reiniciar la aplicación para refrescar la selección de asientos
+				main(null); 
 			});
 
 			frame.add(confirmButton);
@@ -212,7 +194,7 @@ public class Main {
 		}
 	}
 
-	// Método para redimensionar las imágenes
+	
 	private static Icon resizeIcon(ImageIcon icon, int width, int height) {
 		Image img = icon.getImage();
 		Image resizedImage = img.getScaledInstance(width, height, Image.SCALE_SMOOTH);

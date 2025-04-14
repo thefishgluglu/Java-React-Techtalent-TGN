@@ -2,13 +2,13 @@ package UD08;
 
 public class T3 {
 
-	// CONSTANTES
+	
 	private final static double PRECIO_BASE_PRED = 100;
 	private final static ColorEnum COLOR_PRED = ColorEnum.BLANCO;
 	private final static ConsumoEnum CONSUMO_ENERGETICO_PRED = ConsumoEnum.F;
 	private final static double PESO_PRED = 5;
 
-	// Atributos
+	
 	protected double precioBase;
 	protected ColorEnum color;
 	protected ConsumoEnum consumoEnergetico;

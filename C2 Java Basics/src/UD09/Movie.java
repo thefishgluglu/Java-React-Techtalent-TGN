@@ -6,7 +6,7 @@ public class Movie {
     private int duration;
     private int minAge;
     private String director;
-    private static final String FILE_NAME = "occupiedSeats"+title+".txt";
+    
     
 
     public Movie(String title, int duration, int minAge, String director) {
