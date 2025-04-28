@@ -1,5 +1,5 @@
 
-package UD09;
+package UD09_06;
 
 import java.util.Random;
 
