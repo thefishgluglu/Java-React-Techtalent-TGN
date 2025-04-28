@@ -74,14 +74,14 @@ public class videojuego {
             return this.titulo + " es igual que " + v2.titulo;
         }
 		
-		return null;
+		
 	}
 		
 		
-	}
+	
 		
 		
 	}
 	
 
-}
+

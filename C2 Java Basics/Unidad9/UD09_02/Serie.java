@@ -77,9 +77,6 @@ public class Serie {
 			return this.titulo + " tiene menos temporadas que " + s2.titulo;
 		} else {
 			return this.titulo + " y " + s2.titulo + " tienen el mismo número de temporadas";
-		
-		
-		return null;
+		}
 	}
-} 
 }

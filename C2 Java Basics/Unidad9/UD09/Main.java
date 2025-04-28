@@ -134,12 +134,12 @@ public class Main {
 				}
 
 				JOptionPane.showMessageDialog(null,
-						"Has seleccionado los asientos: " + selectedSeats + "\nPrecio total: $" + totalPrice);
+						"Has seleccionado los asientos: " + selectedSeats + "\nPrecio total: " + totalPrice + "€");
 				do {
 					String confirm = JOptionPane.showInputDialog("¿Quieres confirmar la compra? (si/no)");
 					if (confirm != null && confirm.equalsIgnoreCase("si")) {
 						String pagar = JOptionPane
-								.showInputDialog("El total es? " + totalPrice + " ¿Con cuanto deseas paagr?");
+								.showInputDialog("El total es " + totalPrice + "€" + "\n¿Con cuanto deseas pagar?");
 						double pago = Double.parseDouble(pagar);
 						if (pago < totalPrice) {
 							JOptionPane.showMessageDialog(null, "No tienes suficiente dinero.");

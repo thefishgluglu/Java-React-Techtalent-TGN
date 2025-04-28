@@ -2,7 +2,7 @@ package UD09_02;
 
 public class Main {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		videojuego v1 = new videojuego("The Last of Us", 15, "Acción", "Naughty Dog");
 		videojuego v2 = new videojuego("God of War", 20, "Acción/Aventura", "Santa Monica Studio");
 

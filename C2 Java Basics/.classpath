@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="UD09_01/" kind="src" path="src"/>
-	<classpathentry kind="src" path="Unidad 9"/>
+	<classpathentry kind="src" path="Unidad9"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
