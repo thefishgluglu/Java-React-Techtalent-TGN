@@ -7,5 +7,10 @@
 	</classpathentry>
 	<classpathentry excluding="UD09_01/" kind="src" path="src"/>
 	<classpathentry kind="src" path="Unidad9"/>
+	<classpathentry kind="lib" path="C:/Users/danie/Downloads/libs/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
