@@ -1,0 +1,59 @@
+✅ EJEMPLOS DE UPDATE
+1. Cambiar el precio de un producto
+
+
+db.productos.updateOne(
+  { nombre: "Laptop Lenovo" },
+  { $set: { precio: 1100 } }
+)
+
+ Incrementar el stock de un producto
+
+
+db.productos.updateOne(
+  { nombre: "Mouse Inalámbrico" },
+  { $inc: { stock: 10 } }
+)
+
+❌ EJEMPLOS DE DELETE
+
+
+
+db.clientes.deleteOne({ nombre: "Ana Ruiz" })
+
+
+
+db.productos.deleteOne({ nombre: "Altavoz portátil", stock: 0 })
+
+
+🔍 EJEMPLOS DE FIND() (consultas con sentido)
+
+
+📌 1. Buscar todos los clientes con correo de Gmail
+
+
+db.clientes.find({ email: /@gmail\.com$/ })
+
+
+📌 2. Ver todos los productos con stock menor a 20 (equivalente a SELECT * WHERE stock < 20)
+
+
+db.productos.find({ stock: { $lt: 20 } })
+
+
+📌 3. Pedidos de venta por un cliente específico
+
+
+db.Factura_venta.find({ cliente: "Carlos Pérez" })
+
+
+📌 4. Productos vendidos en cantidades mayores a 1
+
+
+db.Factura_venta.find({ cantidad: { $gt: 1 } })
+
+
+📌 5. Ver todas las transacciones de tipo “compra” en la colección ventas/compra
+
+
+db["ventas/compra"].find({ tipo: "compra" })
