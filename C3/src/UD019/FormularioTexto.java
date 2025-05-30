@@ -4,7 +4,7 @@ package UD019;
 	import java.awt.*;
 	import java.awt.event.*;
 
-	public class FormularioTexto extends JFrame {
+	public class extends JFrame {
 	    private JTextField campoTexto;
 	    private JButton botonMostrar;
 
